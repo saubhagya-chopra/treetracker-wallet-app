@@ -52,7 +52,7 @@ jobs:
       - name: Install dependencies
         run: yarn workspace user install
       - name: Start the app
-        run: yarn workspace user web dev
+        run: yarn workspace web dev
       - name: Wait for services
         run: npx --yes wait-on http://localhost:8080 http://localhost:3000
       - name: Run e2e tests
